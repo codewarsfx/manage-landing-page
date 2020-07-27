@@ -14,9 +14,7 @@ function handleClick() {
   links.forEach((link, index) => {
     if (link.style.animation) link.style.animation = '';
     else {
-      link.style.animation = `fadein .5s  ease forwards ${
-        index / 7 + 0.4 + 0.2
-      }s`;
+      link.style.animation = `fadein .5s  ease forwards ${index / 7 + 0.4}s`;
     }
   });
 }

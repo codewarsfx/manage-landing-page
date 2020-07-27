@@ -48,7 +48,7 @@ body {
 
 /* header styles */
 header {
-  width: 84%;
+  width: 88%;
   margin: auto;
   display: flex;
   min-height: 15vh;
@@ -92,9 +92,9 @@ nav {
   transform: translateY(-50px);
   opacity: 0;
 }
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 .nav-links li:not(:first-child) {
   margin-top: 1.3em;
 }
@@ -119,7 +119,7 @@ nav {
 .nav-links li a:hover {
   color: var(--Dark-Grayish-Blue);
 }
-.nav-cta {
+.primary-btn {
   display: none;
 }
 .burger {
@@ -127,6 +127,7 @@ nav {
   z-index: 2000;
   margin-top: -4px;
   transition: transform 0.3s;
+  cursor: pointer;
 }
 .burger div {
   width: 26px;
@@ -147,7 +148,15 @@ nav {
 .move .stick2 {
   transform: translateX(5px);
 }
-
+.primary-btn-link {
+  padding: 0.8em 1.7em;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 0.9em;
+  color: white;
+  background-color: var(--Bright-Red);
+  box-shadow: 0 8px 4px var(--Very-Pale-Red);
+}
 @media (min-width: 760px) {
   .burger {
     display: none;
@@ -183,16 +192,76 @@ nav {
   .nav-links li:not(:first-child) {
     margin-top: 0;
   }
-  .nav-cta {
+  .primary-btn {
     display: block;
   }
-  .nav-cta a {
+  .primary-btn-link {
     padding: 0.8em 1.7em;
     text-decoration: none;
     border-radius: 50px;
     font-size: 0.9em;
     color: white;
-    /* font-weight: bold; */
     background-color: var(--Bright-Red);
+    box-shadow: 0 8px 4px var(--Very-Pale-Red);
+  }
+}
+/* * {
+  border: 1px solid red;
+} */
+/* hero section */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 88%;
+  margin: auto;
+  padding: 1em;
+}
+.hero-section-image {
+  width: 100%;
+  order: -1;
+}
+.hero-section-image img {
+  width: 100%;
+  height: 100%;
+}
+.hero-section-content-header {
+  font-size: 3.7rem;
+  font-weight: 800;
+  line-height: 1.3;
+  margin: 0.7em 0 0.4em;
+}
+.hero-section-content,
+.hero-section-content-secondary {
+  text-align: center;
+}
+
+.hero-section-content-secondary {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: var(--Dark-Grayish-Blue);
+}
+.primary-btn-link-mod {
+  display: inline-block;
+  margin: 2.5em auto;
+}
+@media (min-width: 760px) {
+  .hero-section-content,
+  .hero-section-content-secondary {
+    text-align: left;
+  }
+  .hero {
+    flex-direction: row;
+    align-items: center;
+    height: 88vh;
+  }
+  .hero-section-image {
+    order: 1;
+    max-width: 600px;
+  }
+  .hero-section-content-header {
+    font-size: 4.5rem;
+    margin: 0em 0 0.5em;
   }
 }
