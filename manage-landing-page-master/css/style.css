@@ -29,7 +29,7 @@ body {
   font-size: 1.6rem;
   font-family: var(--font);
   background-color: var(--Vary-Light-Gray);
-  color: var(--Very-Dark-Blue);
+  color: var(--Dark-Blue);
 }
 .wrapper {
   max-width: 1440px;
@@ -42,9 +42,6 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
 }
-/* * {
-  border: 1px solid red;
-} */
 
 /* header styles */
 header {
@@ -205,9 +202,9 @@ nav {
     box-shadow: 0 8px 4px var(--Very-Pale-Red);
   }
 }
-/* * {
-  border: 1px solid red;
-} */
+
+/* --------------------end of navigation section----------------------------- */
+
 /* hero section */
 
 .hero {
@@ -265,3 +262,99 @@ nav {
     margin: 0em 0 0.5em;
   }
 }
+/* -------------------------end of hero section------------------------------ */
+/* * {
+  border: 1px solid red;
+} */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  margin: auto;
+}
+.about-main-heading {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.about .hero-section-content-secondary {
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  hyphens: auto;
+}
+.about-main,
+.about-main .hero-section-content-secondary-mod {
+  text-align: center;
+}
+.about-aside,
+.about-aside-row {
+  margin-top: 2em;
+}
+.about-aside-heading-span {
+  padding: 0.3em 1em;
+  border-radius: 50px;
+  color: white;
+  background-color: var(--Bright-Red);
+  font-size: 1.5rem;
+}
+.about-aside-heading {
+  font-size: 1em;
+  background-color: var(--Very-Pale-Red);
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.about-aside-heading span {
+  border-radius: 50px;
+  color: white;
+  display: inline-block;
+  background-color: var(--Bright-Red);
+  margin-right: 1.8em;
+  padding: 0.5em 1.4em;
+  justify-self: start;
+}
+
+@media (min-width: 760px) {
+  .about {
+    flex-direction: row;
+  }
+  .about-main-heading {
+    font-size: 3.8rem;
+  }
+  .about-main .hero-section-content-secondary-mod,
+  .about-main {
+    text-align: left;
+    margin-bottom: 1.9em;
+  }
+
+  .about-aside {
+    margin: 0;
+    max-width: 620px;
+  }
+  .about-aside-row:first-child {
+    margin: 0;
+  }
+  .about-aside-heading:first-child {
+    margin: 0;
+  }
+  .about-aside-heading {
+    background-color: initial;
+  }
+  .about-main .hero-section-content-secondary-mod {
+    width: 60%;
+  }
+  .about-aside .hero-section-content-secondary {
+    width: 85%;
+    margin-left: auto;
+  }
+}
+
+/* * {
+  border: 1px solid red;
+} */
