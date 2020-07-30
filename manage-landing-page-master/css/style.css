@@ -28,7 +28,7 @@
 body {
   font-size: 1.6rem;
   font-family: var(--font);
-  background-color: var(--Vary-Light-Gray);
+  /* background-color: var(--Vary-Light-Gray); */
   color: var(--Dark-Blue);
 }
 .wrapper {
@@ -63,7 +63,7 @@ header {
 nav {
   position: absolute;
   z-index: 1000;
-  top: 15vh;
+  top: 18vh;
   width: 100%;
   background-color: white;
   border-radius: 5px;
@@ -251,7 +251,7 @@ nav {
   .hero {
     flex-direction: row;
     align-items: center;
-    height: 88vh;
+    height: 89vh;
   }
   .hero-section-image {
     order: 1;
@@ -354,7 +354,100 @@ nav {
     margin-left: auto;
   }
 }
+.pre-nav {
+  background-color: var(--Bright-Red);
+  padding: 2.5em 0;
+}
+.pre-nav .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.nav-cta {
+  box-shadow: none;
+  background-color: var(--Vary-Light-Gray);
+  color: var(--Dark-Blue);
+  margin: 2.5em auto 0;
+}
+.nav-heading {
+  font-size: 3.8rem;
 
+  margin: auto;
+  text-align: center;
+  color: var(--Vary-Light-Gray);
+}
+
+@media (min-width: 760px) {
+  .pre-nav .wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+  .nav-cta {
+    display: inline-block;
+    margin: 0;
+  }
+  .nav-heading {
+    margin: 0;
+    width: 40%;
+    font-size: 4rem;
+    text-align: left;
+  }
+}
+
+/* testimonial section */
+.testimonials-header {
+  text-align: center;
+  margin: 2em 0;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.testimonials {
+  width: 88%;
+  margin: 0 auto 3em auto;
+}
+.wrapper-glide {
+  background-color: var(--Vary-Light-Gray);
+  position: relative;
+  padding: 2.5em 2em;
+  overflow-y: visible;
+}
+
+.glide__slide {
+  padding: 2em;
+}
+
+.glide__slide-image {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.glide__slide-image img {
+  width: 100%;
+}
+.glide__slide-body-header {
+  font-weight: 800;
+  text-align: center;
+  margin: 1em 0;
+  font-size: 1.8;
+}
+.glide__slide-body-paragraph {
+  font-size: 16px;
+  line-height: 2;
+  color: var(--Dark-Grayish-Blue);
+  text-align: center;
+}
+.glide__arrow {
+  border: 2px solid var(--Bright-Red);
+  color: var(--Bright-Red);
+}
+.glide__bullet {
+  background-color: var(--Bright-Red);
+}
 /* * {
   border: 1px solid red;
 } */
