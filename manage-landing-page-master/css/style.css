@@ -211,7 +211,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 88%;
+  width: 90%;
   margin: auto;
   padding: 1em;
 }
@@ -404,7 +404,7 @@ nav {
   font-weight: 800;
 }
 .testimonials {
-  width: 88%;
+  width: 90%;
   margin: 0 auto 3em auto;
 }
 .wrapper-glide {
