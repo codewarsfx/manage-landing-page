@@ -213,7 +213,7 @@ nav {
   justify-content: center;
   /* width: 92%; */
   margin: auto;
-  padding: 1em;
+  /* padding: 1em; */
 }
 .hero-section-image {
   width: 100%;
@@ -270,7 +270,7 @@ nav {
 .about {
   display: flex;
   flex-direction: column;
-  width: 88%;
+  /* width: 88%; */
   margin: auto;
 }
 .about-main-heading {
@@ -404,7 +404,7 @@ nav {
   font-weight: 800;
 }
 .testimonials {
-  width: 90%;
+  /* width: 90%; */
   margin: 0 auto 3em auto;
 }
 .wrapper-glide {
@@ -450,6 +450,6 @@ nav {
 }
 
 /* footer section */
-* {
+/* * {
   border: 1px solid red;
-}
+} */
