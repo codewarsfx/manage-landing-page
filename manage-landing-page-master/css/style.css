@@ -34,6 +34,7 @@ body {
 .wrapper {
   max-width: 1440px;
   margin: auto;
+  width: 88%;
 }
 .overlay {
   position: absolute;
@@ -45,7 +46,6 @@ body {
 
 /* header styles */
 header {
-  width: 88%;
   margin: auto;
   display: flex;
   min-height: 15vh;
@@ -211,7 +211,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 92%;
+  /* width: 92%; */
   margin: auto;
   padding: 1em;
 }
@@ -448,6 +448,8 @@ nav {
 .glide__bullet {
   background-color: var(--Bright-Red);
 }
-/* * {
+
+/* footer section */
+* {
   border: 1px solid red;
-} */
+}
