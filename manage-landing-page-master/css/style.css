@@ -31,7 +31,7 @@ body {
   color: var(--Dark-Blue);
 }
 .wrapper {
-  max-width: 1440px;
+  max-width: 1400px;
   margin: auto;
   width: 88%;
 }
@@ -450,7 +450,7 @@ footer {
 .form-input input,
 .form-input button {
   padding: 1em 2em;
-  border-radius: 55px;
+  border-radius: 25px;
   border: none;
 }
 .form-input button {
